@@ -9,6 +9,7 @@ const createTask = async (FormData: any) => {
   });
   revalidatePath("/tasks");
 };
+
 export default function Taskform() {
   return (
     <>

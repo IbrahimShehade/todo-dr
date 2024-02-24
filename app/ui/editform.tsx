@@ -31,7 +31,6 @@ export default function EditForm(tasks: any) {
           name="content"
           className="input input-bordered w-full"
         />
-        {/* completed */}
         <div className="form-control my-4">
           <label htmlFor="completed" className="label cursor-pointer">
             <span className="label-text">completed</span>

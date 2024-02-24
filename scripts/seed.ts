@@ -7,7 +7,6 @@ async function main() {
   };
 
   const res = await insertToDo(newUser);
-  console.log("insert user success", res);
   process.exit();
 }
 

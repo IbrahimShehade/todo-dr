@@ -22,10 +22,6 @@ export default async function Tasklist() {
               <Link
                 href={{
                   pathname: `/tasks/${d.id}`,
-                  // query: {
-                  //   name: user.first_name,
-                  //   av: user.avatar,
-                  // },
                 }}
                 className="btn btn-xs mr-3 mt-2  w-fit btn-error indent-px"
               >
