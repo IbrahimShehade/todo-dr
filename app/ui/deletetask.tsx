@@ -9,7 +9,7 @@ const deleteTaskform = async (FormData: any) => {
   revalidatePath("/task");
 };
 
-export default function Deletetask({ id }: any) {
+export default function Deletetask({ id }: { id: number }) {
   return (
     <form action={deleteTaskform}>
       <input type="hidden" name="id" value={id} />

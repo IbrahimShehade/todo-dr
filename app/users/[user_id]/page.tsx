@@ -1,6 +1,14 @@
 import React from "react";
 import Image from "next/image";
-export default function LoneUser({ searchParams }: any) {
+interface searchParamsTypes {
+  name: string;
+  av: string;
+}
+export default function LoneUser({
+  searchParams,
+}: {
+  searchParams: searchParamsTypes;
+}) {
   const userName = searchParams.name;
   const img = searchParams.av;
   return (

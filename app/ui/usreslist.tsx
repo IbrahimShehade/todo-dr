@@ -2,7 +2,8 @@ import { Suspense } from "react";
 import Link from "next/link";
 import Loading from "./loading";
 import UsersImage from "./usersImage";
-export default async function Userslist({ users }: any) {
+import { ApiResponse } from "../users/page";
+export default async function Userslist({ users }: { users: ApiResponse }) {
   await new Promise((resolve) => setTimeout(resolve, 2000));
 
   return (

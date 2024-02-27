@@ -2,7 +2,7 @@ import { db } from "@/lib/db";
 import { todos } from "@/lib/schema";
 import { eq } from "drizzle-orm";
 import { revalidatePath } from "next/cache";
-const editTask = async (formData: any) => {
+const editTask = async (formData: { get: (arg0: string) => any }) => {
   "use server";
   const id = formData.get("id");
   const Editedtask = formData.get("content");

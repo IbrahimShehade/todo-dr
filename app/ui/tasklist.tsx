@@ -18,7 +18,7 @@ export default async function Tasklist() {
               {JSON.stringify(d.createdAt).split("T")[0].replace(/"/g, "")}
             </h2>
             <div className="flex flex-col p-1">
-              <Deletetask id={d.id} className="m-3" />
+              <Deletetask id={d.id} />
               <Link
                 href={{
                   pathname: `/tasks/${d.id}`,

@@ -2,7 +2,7 @@ import Link from "next/link";
 let num: number = 0;
 
 export default function Page({ searchParams }: any) {
-  const variable: any = searchParams.num | 0;
+  const variable: string | number = searchParams.num | 0;
   const numberVariable: number = Number(variable);
 
   return (
